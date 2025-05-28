@@ -8,3 +8,11 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Pyinstaller files
+*.spec
+
+
+.idea/
+.env
+*.yaml
