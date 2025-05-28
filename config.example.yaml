@@ -1,0 +1,16 @@
+encoding: "utf-8"
+
+# mqtt config
+mqtt_host: "172.20.61.6"
+mqtt_port: 1883
+mqtt_topic_list: 
+  - "object_data_cp"
+
+# kafka config
+kafka_servers:
+  - "10.10.99.108:9092"
+  - "10.10.99.109:9092"
+  - "10.10.99.110:9092"
+
+# log config
+log_level: "DEBUG"

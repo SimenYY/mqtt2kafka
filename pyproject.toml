@@ -1,0 +1,17 @@
+[project]
+name = "mqtt2kafka"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "art>=6.5",
+    "confluent-kafka>=2.10.0",
+    "filelock>=3.18.0",
+    "kafka-python>=2.2.10",
+    "loguru>=0.7.3",
+    "paho-mqtt>=2.1.0",
+    "pydantic-settings>=2.9.1",
+    "pyinstaller>=6.13.0",
+    "pyyaml>=6.0.2",
+]
