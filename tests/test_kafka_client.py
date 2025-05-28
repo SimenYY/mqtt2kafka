@@ -1,4 +1,4 @@
 from app.kafka_client import KafkaProducer
 
 producer = KafkaProducer()
-print(producer.servers)
+print(producer.bootstrap_servers)
