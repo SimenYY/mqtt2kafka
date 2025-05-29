@@ -41,7 +41,7 @@ class KafkaProducer:
             _callback = delivery_report   
             
         self.producer.produce(topic, value, callback=_callback)
-    
+        self.producer.poll(0)
     def to_dict(self, exclude_none: bool = False) -> dict:
         if exclude_none:
             return {k: v for k, v in asdict(self).items() if v is not None}
