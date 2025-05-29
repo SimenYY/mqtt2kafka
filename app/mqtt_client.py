@@ -47,8 +47,6 @@ class MqttClientV2:
         
         if self.user_data is not None:
             self._client.user_data_set(self.user_data)
-
-        self._client.enable_logger(logger)
             
         self._address: str = f"{self.host}:{self.port}"
         
