@@ -143,3 +143,4 @@ cython_debug/
 
 # custom
 config.yaml
+Mqtt2Kafka.lock
