@@ -1,6 +1,3 @@
-from art  import text2art
-
-
 from app.mqtt2kafka import Mqtt2Kafka
 from app import logger
 from app.utils.loguru_config import LoguruConfig
@@ -18,22 +15,24 @@ lc.setup_file(
     enqueue=settings.log_enqueue,
 )
 
-def ahead_print():
-    print(text2art(settings.app_title))
+def art_print():
+    from art import tprint
+    
+    tprint(settings.app_title)
     print(f"{settings.app_title} v{settings.app_version}")
     print()
     print(".exe同目录下配置文件: config.yaml")
     print()
 def main():
         try:
-                mqtt_2_kafka = Mqtt2Kafka()
-                mqtt_2_kafka.run()
+            mqtt_2_kafka = Mqtt2Kafka()
+            mqtt_2_kafka.run()
         except Exception as e:
             logger.exception(e)
     
 if __name__ == "__main__":
     # pyinstaller -F .\main.py -n mqtt2kafka
-    ahead_print()
+    art_print()
     
     with SingleAppGuard(app_name=settings.app_title):
         main()
