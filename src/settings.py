@@ -1,7 +1,7 @@
 from pathlib import Path
-from typing import Optional, List
+from typing import List
 
-from app.utils.pydantic_settings_extensions import YamlSettings
+from src.utils.pydantic_settings_extensions import YamlSettings
 
 APP_DIR = Path(__file__).resolve().parent
 

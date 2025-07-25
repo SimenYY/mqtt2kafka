@@ -1,8 +1,8 @@
-from app.mqtt2kafka import Mqtt2Kafka
-from app import logger
-from app.utils.loguru_config import LoguruConfig
-from app.settings import settings
-from app.utils.singleton import SingleAppGuard
+from src.mqtt2kafka import Mqtt2Kafka
+from src import logger
+from src.utils.loguru_config import LoguruConfig
+from src.settings import settings
+from src.utils.singleton import SingleAppGuard
 
 lc = LoguruConfig(settings.app_title, settings.log_level)
 lc.include_logging_logger(logger)

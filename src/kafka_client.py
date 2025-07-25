@@ -1,7 +1,7 @@
 import uuid
 import logging
-from dataclasses import dataclass, field, asdict, fields
-from typing import Optional, Callable, Any, List, Dict
+from dataclasses import dataclass, field, asdict
+from typing import Optional, Callable, Any
 from confluent_kafka import Producer
 
 logger = logging.getLogger(__name__)

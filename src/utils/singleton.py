@@ -12,7 +12,6 @@
 """
 
 import sys
-import uuid
 from pathlib import Path
 import logging
 from dataclasses import dataclass

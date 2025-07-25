@@ -1,6 +1,6 @@
 import uuid
 import logging
-from typing import Tuple, Any, Optional, Union, Sequence
+from typing import Tuple, Any, Optional, Union
 from dataclasses import dataclass, field
 
 import paho.mqtt.client as mqtt
